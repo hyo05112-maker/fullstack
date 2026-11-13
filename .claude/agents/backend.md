@@ -1,4 +1,3 @@
-cat > .claude/agents/backend.md << 'EOF'
 ---
 name: backend
 description: backend/ 아래 Java 코드를 새로 만들거나 고칠 때 사용. API 추가, 엔티티·SQL 변경, 서버 오류와 DB 관련 오류 수정.
@@ -31,4 +30,3 @@ org.scoula/domain/{기능}/
 ## 작업 후
 - ./gradlew bootJar -x test 로 빌드를 확인한다.
 - 새 API마다 요청·응답 예시를 한 줄씩 알린다.
-EOF

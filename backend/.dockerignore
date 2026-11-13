@@ -1,3 +1,7 @@
 build
 .gradle
 .idea
+.vscode
+bin
+out
+*.md

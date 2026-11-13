@@ -1,9 +1,15 @@
+server:
+  port: ${PORT:8080}
+
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/appdb?serverTimezone=Asia/Seoul&characterEncoding=UTF-8}
-    username: ${SPRING_DATASOURCE_USERNAME:root}
-    password: ${SPRING_DATASOURCE_PASSWORD}
+    url: ${SPRING_DATASOURCE_URL:jdbc:h2:mem:appdb;MODE=MySQL;DB_CLOSE_DELAY=-1}
+    username: ${SPRING_DATASOURCE_USERNAME:sa}
+    password: ${SPRING_DATASOURCE_PASSWORD:}
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+app:
+  frontend-url: ${FRONTEND_URL:http://localhost:5173}

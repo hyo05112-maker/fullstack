@@ -1,4 +1,3 @@
-cat > .claude/agents/frontend.md << 'EOF'
 ---
 name: frontend
 description: frontend/ 아래 React 화면과 API 연동을 새로 만들거나 고칠 때 사용. 컴포넌트, 상태, 스타일, 화면 오류 수정.
@@ -20,4 +19,3 @@ frontend/ 폴더만 수정한다. 공통 약속은 루트 CLAUDE.md를 따른다
 
 ## 작업 후
 - npm run lint 와 npm run build 로 확인한다.
-EOF
